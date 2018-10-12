@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.notex</groupId>
     <artifactId>notex-boot-dependencies</artifactId>
-    <version>1.1-SNAPSHOT</version>
+    <version>${revision}</version>
     <packaging>pom</packaging>
     <name>notex-Boot-Dependencies</name>
     <description>notex Spring Boot项目依赖管理</description>
@@ -18,9 +18,10 @@
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <spring.cloud.version>Dalston.RELEASE</spring.cloud.version>
-        <spring.boot.version>1.5.1.RELEASE</spring.boot.version>
-        <spring.version>4.3.9.RELEASE</spring.version>
+        <spring.cloud.version>Finchley.M8</spring.cloud.version>
+        <spring.boot.version>2.0.0.RELEASE</spring.boot.version>
+        <spring.version>5.0.4.RELEASE</spring.version>
+        <revision>2.0-SNAPSHOT</revision>
         <commons.lang3.version>3.4</commons.lang3.version>
         <commons.collections4.version>4.1</commons.collections4.version>
         <commons.fileupload.version>1.3.1</commons.fileupload.version>
@@ -90,6 +91,12 @@
                 <version>${commons.io.version}</version>
             </dependency>
 
+
+            <dependency>
+                <groupId>com.hengyunsoft</groupId>
+                <artifactId>validator</artifactId>
+                <version>${revision}</version>
+            </dependency>
             <!-- excel -->
             <dependency>
                 <groupId>org.apache.poi</groupId>
